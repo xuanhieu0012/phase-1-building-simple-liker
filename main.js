@@ -19,14 +19,14 @@ function hearMelting(){
 }
 function heartEvent(){
 
-  likeBtnLi.forEach(ele => 
+  likeGylphSpan.forEach(ele => 
     
     ele.addEventListener('click', e =>{
-     
+    
     if (e.target.textContent === EMPTY_HEART){
       e.target.className = "activated-heart"
       return e.target.textContent = FULL_HEART
-  } else (e.target.textContent === FULL_HEART)
+  } else if (e.target.textContent === FULL_HEART)
       e.target.className = "emty"
       return  e.target.textContent = EMPTY_HEART
     
